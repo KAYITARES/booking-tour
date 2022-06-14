@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem 4.4rem;
-
+box-shadow: 3px 2px rgba(48, 100, 134, 0.481);
   align-items: center;
 }
 .logo-img {
@@ -31,7 +31,7 @@ body {
 .nav-link:visited {
   font-size: 1.8rem;
   text-decoration: none;
-  color: white;
+  color: rgb(49, 49, 49);
   font-weight: 500;
 }
 .nav-link:hover,
@@ -44,7 +44,7 @@ body {
 }
 .link-green:hover,
 .link-green:active {
-  color: white;
+  color: #1890ff;
 }
 .btn-link:link,
 .btn-link:visited {
