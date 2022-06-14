@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "./navbar";
 import Footer from "./footer";
 
-const HomaeLayout = ({ children }) => {
+const HomeLayout = ({ children }) => {
   return (
     <>
       <Nav />
@@ -11,4 +11,4 @@ const HomaeLayout = ({ children }) => {
     </>
   );
 };
-export default HomaeLayout;
+export default HomeLayout;

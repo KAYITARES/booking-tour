@@ -11,3 +11,9 @@
 .images {
   width: 100%;
 }
+.tour-card-grid {
+  background: rgb(247, 252, 255);
+  max-width: 32%;
+  box-shadow: 20px 3px black;
+  margin:0.6%
+}

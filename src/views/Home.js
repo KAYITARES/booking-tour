@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
       <div className="home-container">
-        <HomaeLayout>
+        <>
           <div className="home-content">
             <h1 className="heading-title">Rwanda Booking Tour</h1>
             <div className="carousel-img">
@@ -49,7 +49,7 @@ const Home = () => {
               <hr className="align"></hr>
             </div>
           </div>
-        </HomaeLayout>
+        </>
       </div>
     </>
   );
