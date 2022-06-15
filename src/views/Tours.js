@@ -9,7 +9,7 @@ const { Text, Title } = Typography;
 
 const Tours = () => {
   const [showDrawer, setShowDrawer] = useState(false);
-  const [selectedTour,setSelectedTour]= useState({});
+  const [selectedTour, setSelectedTour] = useState({});
   return (
     <>
       <div
@@ -38,7 +38,7 @@ const Tours = () => {
                 </Space>
                 <Button
                   onClick={() => {
-                    setSelectedTour(tour)
+                    setSelectedTour(tour);
                     setShowDrawer(true);
                   }}
                 >
