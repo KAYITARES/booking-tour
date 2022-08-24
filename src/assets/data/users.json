@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Eric Dushime",
+    "email": "eric@gmail.com",
+    "gender": "male",
+    "home": "Kimironko",
+    "isActive": false,
+    "about": "Est labore cillum tempor duis. Irure do non elit aliqua minim reprehenderit. Eiusmod ea proident laboris dolore nostrud elit velit incididunt velit. Id aliqua sint eu consectetur laboris et est in.",
+    "phone": "+250788888888",
+    "profilePicture": "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+  },
+  {
+    "name": "Elise Jacky",
+    "email": "elise@gmail.com",
+    "gender": "female",
+    "home": "Kimironko",
+    "isActive": true,
+    "about": "Est labore cillum tempor duis. Irure do non elit aliqua minim reprehenderit. Eiusmod ea proident laboris dolore nostrud elit velit incididunt velit. Id aliqua sint eu consectetur laboris et est in.",
+    "phone": "+250788888888",
+    "profilePicture": "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+  },
+  {
+    "name": "Marius Jojo",
+    "email": "eric@gmail.com",
+    "gender": "male",
+    "home": "Kimironko",
+    "isActive": false,
+    "about": "Est labore cillum tempor duis. Irure do non elit aliqua minim reprehenderit. Eiusmod ea proident laboris dolore nostrud elit velit incididunt velit. Id aliqua sint eu consectetur laboris et est in.",
+    "phone": "+250788888888",
+    "profilePicture": "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+  },
+  {
+    "name": "Cedrick  Gahamanyi",
+    "email": "cedrick@gmail.com",
+    "gender": "male",
+    "home": "Kimironko",
+    "isActive": true,
+    "about": "Est labore cillum tempor duis. Irure do non elit aliqua minim reprehenderit. Eiusmod ea proident laboris dolore nostrud elit velit incididunt velit. Id aliqua sint eu consectetur laboris et est in.",
+    "phone": "+25077788888",
+    "profilePicture": "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+  }
+]
