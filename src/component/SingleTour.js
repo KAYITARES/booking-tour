@@ -10,19 +10,23 @@ const SingleTour = ({ data }) => {
         <Title level={4} style={{ color: "#1976D1" }}>
           {data.title.toUpperCase()}
         </Title>
-        <Image preview={true} src={data.photo} />
+        <Image preview={true} src={data.pictures[0]} />
 
         <Space>
           <Text>Prepared By: </Text>
-          <Text strong> {data.prepareBy} </Text>
+          <Text strong> {data?.createdBy?.names} </Text>
+         </Space> 
+         <Space>
+          <Text>email: </Text>
+          <Text strong> {data?.createdBy?.email} </Text>
         </Space>
         <Text type="secondary" italic>
           {data.description}
         </Text>
         <Space>
           <Text>Due Date: </Text>
-          <Text strong> {data.dueDate} 10h00 am</Text>
-        </Space>
+          <Text strong> {data?.duration?.startAt.slice(0,10)}  End Date: </Text>{data?.duration?.endAt.slice(0,10)} 
+                 </Space>
         <Card title="Applicant Information">
           <Space direction="vertical">
             <Input placeholder="Email" style={{ width: "100%" }} />

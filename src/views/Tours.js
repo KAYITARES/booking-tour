@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Image, Space, Typography, Button, Drawer } from "antd";
 import picture from "../assets/images/tours/1.jpeg";
 import SingleTour from "../component/SingleTour";
 
-import allTours from "../assets/data/tours.json";
+// import allTours from "../assets/data/tours.json";
+import TourServices from "../services/tourService";
 
 const { Text, Title } = Typography;
 
 const Tours = () => {
   const [showDrawer, setShowDrawer] = useState(false);
-  const [selectedTour,setSelectedTour]= useState({});
+  const [selectedTour, setSelectedTour] = useState({});
+
+  const [allTours,setAllTours]= useState([]);
+
+  useEffect(() => {
+    TourServices.getAllTours().then((res) => {setAllTours(res?.data)});
+  }, []);
   return (
     <>
       <div
@@ -25,20 +32,20 @@ const Tours = () => {
           {allTours.map((tour) => (
             <Card.Grid className="tour-card-grid">
               <Space direction="vertical">
-                <Image preview={true} src={tour.photo} />
+                <Image preview={true} src={tour?.pictures[0]} />
                 <Title level={4} style={{ color: "#1976D1" }}>
-                  {tour.title.toUpperCase()}
+                  {tour?.title.toUpperCase()}
                 </Title>
                 <Text type="secondary" italic>
-                  {tour.description}
+                  {tour?.description}
                 </Text>
                 <Space>
-                  <Text>Due Date: </Text>
-                  <Text strong> {tour.dueDate} 10h00 am</Text>
+                  <Text>Start Date: </Text>
+                  <Text strong> {tour?.duration?.startAt.slice(0,10)}  End Date: </Text>{tour?.duration?.endAt.slice(0,10)} 
                 </Space>
                 <Button
                   onClick={() => {
-                    setSelectedTour(tour)
+                    setSelectedTour(tour);
                     setShowDrawer(true);
                   }}
                 >
